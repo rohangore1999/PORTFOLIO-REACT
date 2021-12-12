@@ -9,7 +9,7 @@ import img8 from '../img/angular-todo.JPG'
 import img9 from '../img/machine-learning.JPG'
 import img10 from '../img/selenium.JPG'
 import img11 from '../img/chatbot.JPG'
-import img12 from '../img/deeplearning.JPG'
+import img12 from '../img/deeplearning.jfif'
 
 
 
@@ -90,7 +90,7 @@ const porfolios = [
         image: img9,
         link1:'https://github.com/rohangore1999/Machine-Learning',
         link2: false,
-        text: 'ML - Repository'
+        text: 'ML - Projects'
     },
 
     {
@@ -117,7 +117,7 @@ const porfolios = [
         image: img12,
         link1:'https://github.com/rohangore1999/Selenium',
         link2: false,
-        text: 'DL - Repository'
+        text: 'DL - Projects'
     }
 ]
 

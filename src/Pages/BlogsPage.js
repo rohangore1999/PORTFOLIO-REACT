@@ -13,13 +13,16 @@ function BlogsPage() {
                     {blogs.map((blog) => {
                         return <div key={blog.id} className='blog-item' >
                             <div className="image">
-                                <img src={blog.image} alt="" />
+                                <a href={blog.link} target='_blank' rel="noreferrer" >
+                                    <img src={blog.image} alt="" />
+                                </a>
                             </div>
 
                             <div className="title">
                                 <a href={blog.link} target='_blank' rel="noreferrer" >
                                     {blog.title}
                                 </a>
+                                <p className='date'>- {blog.date}-{blog.month}</p>
                             </div>
                         </div>
 
@@ -39,7 +42,7 @@ const BlogsStyled = styled.div`
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
-        padding: 2rem 1rem;
+        padding: rem 1rem;
 
         @media screen and (max-width: 770px){
             grid-template-columns: repeat(1, 1fr);
@@ -48,7 +51,8 @@ const BlogsStyled = styled.div`
         
         .blog-item{
             background-color: var(--background-dark-grey);
-            padding: 1rem 1rem;
+            padding: 1.8rem 1rem;
+            margin: 1rem 0;
 
         }
         
@@ -58,19 +62,21 @@ const BlogsStyled = styled.div`
             padding-bottom: .5rem;
             img{
                 width: 100%;
-                height: 90%;
-                object-fit: cover;
+                height: 100%;
+                object-fit: contain;
                 transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
-                    transform: rotate(3deg) scale(1.1);
+                    transform: scale(1.1);
                 }
             }
         }
 
         .title{
+            position:relative;
+
             a{
-                font-size: 1.8rem;
+                font-size: 1rem;
                 padding: 2rem 0;
                 color: var(--white-color);
                 cursor: pointer;
@@ -78,6 +84,14 @@ const BlogsStyled = styled.div`
                 &:hover{
                     color: var(--primary-color);
                 }
+            }
+
+            .date{
+                font-size: .8rem;
+                padding: .4rem;
+                position:absolute;
+                bottom:1;
+                right:0;
             }
         }
     }
