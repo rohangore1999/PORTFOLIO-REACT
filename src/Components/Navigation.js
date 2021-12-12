@@ -3,8 +3,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import avatar from '../img/avatar3.jpg'
+import Sidebar from './Sidebar'
 
-function Navigation() {
+function Navigation({ navToggle, setNavToggle, HamToggle, setHamToggle }) {
     return (
         <NavigationStyled>
             <div className="avatar">
@@ -12,27 +13,53 @@ function Navigation() {
             </div>
 
             <ul className="nav-items">
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
+
                     <NavLink to='/' activeClassName="active-class" exact>Home</NavLink>
+                    {/* <Sidebar navToggle={false}/> */}
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
                     <NavLink to='/about' activeClassName="active-class" exact>About</NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
                     <NavLink to='/resume' activeClassName="active-class" exact>Resume</NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
                     <NavLink to='/portfolios' activeClassName="active-class" exact>Portfolios</NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
                     <NavLink to='/blogs' activeClassName="active-class" exact>Blogs</NavLink>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={() => {
+                    setNavToggle(!navToggle)
+                    setHamToggle(false)
+                }
+                }>
                     <NavLink to='/contact' activeClassName="active-class" exact>Contact</NavLink>
                 </li>
             </ul>

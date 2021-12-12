@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import Navigation from './Navigation'
 
-function Sidebar({navToggle}) {
+function Sidebar({navToggle, setNavToggle, HamToggle, setHamToggle}) {
     return (
         <SidebarStyled className={`${navToggle ? 'nav-toggle':''}`}>
-            <Navigation />
+            <Navigation navToggle={navToggle} setNavToggle={setNavToggle} HamToggle={HamToggle} setHamToggle={setHamToggle}/>
         </SidebarStyled>
     )
 }

@@ -11,6 +11,7 @@ import Switch from '@material-ui/core/Switch'
 import Brightness4Icon from '@material-ui/icons/Brightness4'
 import { useEffect, useState } from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
+import Hamburger from 'hamburger-react';
 import { IconButton } from '@material-ui/core';
 
 
@@ -20,6 +21,7 @@ function App() {
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  const [HamToggle, setHamToggle] = useState(false);
 
   //when the theme change useEffect will run and set documentElement's class as theme
   useEffect(() => {
@@ -38,9 +40,10 @@ function App() {
 
   }
 
+
   return (
     <div className="App">
-      <Sidebar navToggle={navToggle} />
+      <Sidebar navToggle={navToggle} setNavToggle={setNavToggle} HamToggle={HamToggle} setHamToggle={setHamToggle}/>
 
       <div className="theme">
         <div className="light-dark-mode">
@@ -55,8 +58,14 @@ function App() {
       </div>
 
       <div className="ham-burger-menu">
-        <IconButton onClick={()=> setNavToggle(!navToggle)}>
-          <MenuIcon />
+        <IconButton onClick={() => {
+          setNavToggle(!navToggle)
+          setHamToggle(!HamToggle)
+          }
+        }>
+
+          <Hamburger duration={0.8} toggled={HamToggle}
+          />
         </IconButton>
       </div>
 
