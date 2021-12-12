@@ -1,11 +1,10 @@
-import Particles from 'react-particles-js';
+import Particles from 'react-tsparticles';
 
 import React from 'react';
 
 function Particle() {
     return (
-        <>
-        {/* generated from particle react js website */}
+        
             <Particles width="100%" height="100vh"
                 params={{
                     particles: {
@@ -66,7 +65,7 @@ function Particle() {
                     }
                 }}
             />
-        </>
+       
     )
 }
 
