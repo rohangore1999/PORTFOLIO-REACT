@@ -16,7 +16,7 @@ import img12 from '../img/deeplearning.jfif'
 const porfolios = [
     {
         id: 1,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img1,
         link1:'https://github.com/rohangore1999/REACT-WHATSAPP-CLONE',
         link2:'https://react-whatsapp-clone-lake.vercel.app/',
@@ -25,7 +25,7 @@ const porfolios = [
 
     {
         id: 2,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img2,
         link1:'https://github.com/rohangore1999/React-NETFLIX-CLONE',
         link2:'http://react-netflix-clone.investenergy.in/',
@@ -34,7 +34,7 @@ const porfolios = [
 
     {
         id: 3,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img3,
         link1:'https://github.com/rohangore1999/REACT-SPOTIFY-CLONE',
         link2:'https://spotify-clone-4a547.web.app/',
@@ -42,7 +42,7 @@ const porfolios = [
     },
     {
         id: 4,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img4,
         link1:'https://github.com/rohangore1999/REACT-SLACK-CLONE',
         link2:'https://slack-clone-63483.web.app/',
@@ -51,7 +51,7 @@ const porfolios = [
 
     {
         id: 5,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img5,
         link1:'https://github.com/rohangore1999/REACT-DISCORD-CLONE',
         link2:'https://discord-clone-de39b.web.app/',
@@ -60,7 +60,7 @@ const porfolios = [
 
     {
         id: 6,
-        category: 'Clones',
+        category: 'React-Clones',
         image: img6,
         link1:'https://github.com/rohangore1999/REACT-GOOGLE-CLONE',
         link2:'https://clone-aa449.web.app/',
