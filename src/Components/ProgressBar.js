@@ -19,6 +19,19 @@ function ProgressBar({title, width, text}) {
 export default ProgressBar
 
 const ProgressBarStyled = styled.div`
+
+        h6{
+            @media screen and (max-width: 430px){
+                font-size: 1rem;
+            }
+        }
+
+        p{
+            @media screen and (max-width: 430px){
+                font-size: .8rem;
+            }
+        }
+
     .progress-bar{
         display: flex;
         align-items: center;
@@ -41,5 +54,6 @@ const ProgressBarStyled = styled.div`
                 background-color: var(--primary-color);
             }
         }
+
     }
 `;

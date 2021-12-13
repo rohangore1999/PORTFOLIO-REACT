@@ -94,7 +94,7 @@ function App() {
             <ResumePage />
           </Route>
 
-          <Route path="/portfolios" exact>
+          <Route path="/portfolio" exact>
             <PortfoliosPage />
           </Route>
 

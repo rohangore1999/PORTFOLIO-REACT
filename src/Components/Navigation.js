@@ -44,7 +44,7 @@ function Navigation({ navToggle, setNavToggle, HamToggle, setHamToggle }) {
                     setHamToggle(false)
                 }
                 }>
-                    <NavLink to='/portfolios' activeClassName="active-class" exact>Portfolios</NavLink>
+                    <NavLink to='/portfolio' activeClassName="active-class" exact>Portfolio</NavLink>
                 </li>
 
                 <li className="nav-item" onClick={() => {

@@ -104,18 +104,20 @@ const GlobalStyle = createGlobalStyle`
     h1{
         font-size: 4rem;
         color: var(--white-color);
-        span{
-            font-size: 4rem;
-            @media screen and (max-width: 502px){
-                 font-size: 3rem;
-            }
-        }
+        
         @media screen and (max-width: 502px){
             h1{
                 font-size: 2rem;
             }
         }
     }
+
+    span{
+            font-size: 4rem;
+            @media screen and (max-width: 502px){
+                 font-size: 3rem;
+            }
+        }
 
     span{
         color: var(--primary-color);
@@ -130,22 +132,36 @@ const GlobalStyle = createGlobalStyle`
 
     //floating toggler
     .light-dark-mode{
-    position: fixed;
-    right:0;
-    top:50%;
-    background-color: var(--background-light-color-2);
-    width: 6.5rem;
-    height: 2.5rem;
-    z-index:15;
-    display: flex;
-    align-items:center;
-    justify-content: center;
+        position: fixed;
+        right:0;
+        top:50%;
+        background-color: var(--background-light-color-2);
+        width: 6.5rem;
+        height: 2.5rem;
+        z-index:15;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+
+        @media screen and (max-width: 581px){
+            top:20%;
+        }
+
+        @media screen and (max-width: 430px){
+            top:20%;
+            width: 6rem;
+            height: 2rem;
+        }
 
     svg{
-      display: flex;
-      align-items: center;
-      font-size: 1.7rem;
-      color: var(--white-color);
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        color: var(--white-color);
+
+        @media screen and (max-width: 430px){
+            font-size: 1.5rem;
+        }
     }
 
   }

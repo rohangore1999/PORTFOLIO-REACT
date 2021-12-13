@@ -42,8 +42,13 @@ const ContactItemsStyled = styled.div`
         justify-content: center;
         margin-right: 1.5rem;
 
+        
+
         svg{
             font-size: 2.3rem;
+            @media screen and (max-width: 430px){
+                font-size: 1rem;
+        }
         }
     }
 
@@ -52,10 +57,18 @@ const ContactItemsStyled = styled.div`
             color: var(--white-color);
             font-size: 1.2rem;
             padding-bottom: .6rem;
+
+            @media screen and (max-width: 430px){
+                font-size: 1rem;
+            }
         }
 
         p{
             padding: .1rem 0;
+
+            @media screen and (max-width: 430px){
+                font-size: 1rem;
+            }
 
         }
     }

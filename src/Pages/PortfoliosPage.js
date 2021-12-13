@@ -27,8 +27,8 @@ function PortfoliosPage() {
     }
 
     return (
-        <MainLayout>
-            <Title title={'Portfolios'} span={'Portfolios'} />
+        <MainLayout style={{overflow:'hidden'}}>
+            <Title title={'Portfolio'} span={'Portfolio'} />
             
             <InnerLayout>
                 <Button filter={filter} button={button} />

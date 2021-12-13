@@ -13,12 +13,12 @@ function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
-    
+
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'} />
             <ContactPageStyled>
-                <InnerLayout className="contact-section">
+                <InnerLayout className="contact-section" style={{ overflow: 'hidden' }}>
                     <div className="left-content">
                         <div className="contact-title">
                             <h4>Get In Touch</h4>
@@ -45,7 +45,7 @@ function ContactPage() {
                             </div>
 
                             <div className="form-field f-button">
-                                <PrimaryButton title={'Send Email'} downloads={false}/>
+                                <PrimaryButton title={'Send Email'} downloads={false} />
                             </div>
                         </form>
                     </div>
@@ -53,7 +53,7 @@ function ContactPage() {
                     <div className="right-content">
                         <ContactItem icon={phone} title={'Phone'} contact1={'+917021984685'} contact2={''} />
 
-                        <ContactItem icon={email} title={'Email'} contact1={'gorerohan15@gmail.cm'} contact2={''} />
+                        <ContactItem icon={email} title={'Email'} contact1={'gorerohan15@gmail.com'} contact2={''} />
 
                         <ContactItem icon={location} title={'Address'} contact1={'A-401, Vasant Vihar, M.C.C.H Society, Navi Mumbai'} contact2={'India'} />
                     </div>
@@ -84,7 +84,7 @@ const ContactPageStyled = styled.section`
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             @media screen and (max-width: 502px){
-                width: 70%;
+                width: 100%;
             }
         }
 
@@ -108,6 +108,8 @@ const ContactPageStyled = styled.section`
                 position: relative;
                 width: 100%;
 
+                
+
                 label{
                     position: absolute;
                     left: 20px;
@@ -116,6 +118,12 @@ const ContactPageStyled = styled.section`
                     background-color: var(--background-dark-color);
                     padding: 0 .5rem;
                     color: inherit;
+                }
+
+                @media screen and (max-width: 430px){
+                    label{
+                        font-size: 1rem;
+                    }
                 }
 
                 input{
@@ -127,6 +135,10 @@ const ContactPageStyled = styled.section`
                     width: 100%;
                     color: inherit;
 
+                    @media screen and (max-width: 430px){
+                        font-size: 1rem; 
+                    }
+
                 }
 
                 textarea{
@@ -136,6 +148,10 @@ const ContactPageStyled = styled.section`
                     color: inherit;
                     width: 100%;
                     padding: .8rem 1rem;
+
+                    @media screen and (max-width: 430px){
+                        font-size: 1rem; 
+                    }
                 }
             }
 

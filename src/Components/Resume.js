@@ -25,7 +25,7 @@ function Resume() {
                 <div className="resume-content">
                     <ResumeItem year={'MARCH 2021 - Present'} title={'HCL Technologies'} subTitle={'Software Engineer'} text={'Full Time'} />
 
-                    <ResumeItem year={'JAN 2020 - APRIL 2020'} title={'Omam Consultant Pvt Ltd'} subTitle={'Data Engineer'} text={'Internship'} />
+                    <ResumeItem year={'JAN 2020 - APRIL 2020'} title={'Omam Consultants'} subTitle={'Data Engineer'} text={'Internship'} />
 
 
                 </div>
