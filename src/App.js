@@ -48,7 +48,11 @@ function App() {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Rohan Gore</title>
-          <link rel="canonical" href="mysite.com/example" />
+
+          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="apple-touch-icon" href="http://mysite.com/avatar3.jpg" />
+          <link rel="apple-touch-icon" sizes="72x72" href="http://mysite.com/avatar3.jpg" />
+
         </Helmet>
 
       <Sidebar navToggle={navToggle} setNavToggle={setNavToggle} HamToggle={HamToggle} setHamToggle={setHamToggle}/>
