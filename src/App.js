@@ -14,6 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Hamburger from 'hamburger-react';
 import { IconButton } from '@material-ui/core';
 
+import { Helmet } from 'react-helmet';
 
 
 function App() {
@@ -43,6 +44,13 @@ function App() {
 
   return (
     <div className="App">
+
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Rohan Gore</title>
+          <link rel="canonical" href="mysite.com/example" />
+        </Helmet>
+
       <Sidebar navToggle={navToggle} setNavToggle={setNavToggle} HamToggle={HamToggle} setHamToggle={setHamToggle}/>
 
       <div className="theme">
