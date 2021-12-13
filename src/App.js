@@ -14,8 +14,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Hamburger from 'hamburger-react';
 import { IconButton } from '@material-ui/core';
 
-import { Helmet } from 'react-helmet';
-
 
 function App() {
   // usestate to toggle dark/light theme; by default it is dark-theme
@@ -44,16 +42,6 @@ function App() {
 
   return (
     <div className="App">
-
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>Rohan Gore</title>
-
-          <link rel="canonical" href="http://mysite.com/example" />
-          <link rel="apple-touch-icon" href="http://mysite.com/avatar3.jpg" />
-          <link rel="apple-touch-icon" sizes="72x72" href="http://mysite.com/avatar3.jpg" />
-
-        </Helmet>
 
       <Sidebar navToggle={navToggle} setNavToggle={setNavToggle} HamToggle={HamToggle} setHamToggle={setHamToggle}/>
 
