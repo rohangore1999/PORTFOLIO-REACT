@@ -3,9 +3,12 @@ import styled from 'styled-components'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GithubIcon from '@material-ui/icons/GitHub'
 import Particle from '../Components/Particle'
+import Typewriter from 'typewriter-effect';
+
 
 
 function HomePage() {
+
     return (
         <HomePageStyled>
             <div className="particle-con">
@@ -14,9 +17,21 @@ function HomePage() {
 
             <div className="typography">
                 <h1>Hi, I'm</h1><span> Rohan Gore</span>
-                <p>
-                    Software Engineer
-                </p>
+                <div className='typed'>
+                    <Typewriter
+                        options={{
+                            strings: [
+                                'SOFTWARE ENGINEER',
+                                'DEVELOPER',
+                                'DATA ENGINEER',
+                                'WEB SCRAPER'
+                            ],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+
+                </div>
 
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/rohan-gore-355178179/" target="_blank" rel="noreferrer" className="icon i-linkedin">
@@ -53,6 +68,13 @@ const HomePageStyled = styled.header`
         text-align:center;
         width: 100%;
 
+        .typed{
+            span{
+                font-size: 1rem !important;
+                color: var(--background-light-color2);
+                font-weight: bold;
+            }
+        }
        
         h1{
             font-size: 4rem;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { MainLayout, InnerLayout } from '../styles/Layouts'
 import Title from '../Components/Title'
@@ -9,10 +9,23 @@ import EmailIcon from '@material-ui/icons/Email'
 import LocationOnIcon from '@material-ui/icons/LocationOn'
 import ContactItem from '../Components/ContactItem'
 
+
+
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
+
+    // form inputs
+    const [name, setname] = useState("")
+    const [client_email, setemail] = useState("")
+    const [subject, setsubject] = useState("")
+    const [message, setmessage] = useState("")
+
+    console.log("name>>> ",name)
+    console.log("client_email>>> ",client_email)
+    console.log("subject>>> ",subject)
+    console.log("message>>> ",message)
 
     return (
         <MainLayout>
@@ -26,27 +39,29 @@ function ContactPage() {
                         <form className="form">
                             <div className="form-field">
                                 <label htmlFor="name" id='name' >Enter you name*</label>
-                                <input type="text" id="name" />
+                                <input type="text" id="name" name='name' value={name} onChange={(e) => { setname(e.target.value) }}/>
                             </div>
 
                             <div className="form-field">
                                 <label htmlFor="email" id='email' >Enter you email*</label>
-                                <input type="email" id="email" />
+                                <input type="email" id="email" name='email'  value={client_email} onChange={(e) => { setemail(e.target.value) }} />
                             </div>
 
                             <div className="form-field">
                                 <label htmlFor="subject" id='subject' > Subject*</label>
-                                <input type="text" id="subject" />
+                                <input type="text" id="subject" name='subject'  value={subject} onChange={(e) => { setsubject(e.target.value) }}/>
                             </div>
 
                             <div className="form-field">
                                 <label htmlFor="teaxt-area">Enter you Message*</label>
-                                <textarea name="textarea" id="text" cols="30" rows="10"></textarea>
+                                <textarea name="textarea" id="text" cols="30" rows="10"  value={message} onChange={(e) => { setmessage(e.target.value) }}></textarea>
                             </div>
 
                             <div className="form-field f-button">
-                                <PrimaryButton title={'Send Email'} downloads={false} />
+                                <PrimaryButton title={'Send Email'} downloads={false} name={name} setname={setname} email={client_email} setemail={setemail} subject={subject} setsubject={setsubject} message={message} setmessage={setmessage}  />
                             </div>
+
+                            
                         </form>
                     </div>
 
