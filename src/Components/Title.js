@@ -52,7 +52,7 @@ const TitleStyled = styled.div`
 
         span{
             font-weight: 900;
-            color: rgba(25,29,43,.44);
+            color: var(--title-shadow-color);
             font-size: 5rem;
             position: absolute;
             left: 0;
