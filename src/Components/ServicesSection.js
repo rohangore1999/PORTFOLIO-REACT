@@ -22,7 +22,7 @@ function ServicesSection() {
                     <ServiceCard image={webdev} title={'Web Development'} paragraph={'Technology: ANGULAR 12, REACT JS, NEXT JS'} />
 
                     <div className="mid-card">
-                        <ServiceCard image={scrape} title={'Web Scraping'} paragraph={'Technology: PYTHON - BEAUTIFUL SOUP, SELENIUM'} />
+                        <ServiceCard image={scrape} title={'Web Scraping'} paragraph={'Technology: PYTHON - BEAUTIFUL SOUP, SELENIUM, REQUESTS'} />
                     </div>
 
                     <ServiceCard image={python} title={'Data Engineering'} paragraph={'Technology: PYTHON - NUMPY, DATAFRAMES, PANDAS'} />
