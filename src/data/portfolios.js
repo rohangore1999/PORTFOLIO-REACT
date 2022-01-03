@@ -4,13 +4,14 @@ import img3 from '../img/spotify-clone.JPG'
 import img4 from '../img/slack-clone.JPG'
 import img5 from '../img/discord-clone.JPG'
 import img6 from '../img/google-clone.JPG'
-import img7 from '../img/react-native-signal-clone.jpeg'
-import img8 from '../img/angular-investenergy.JPG'
-import img9 from '../img/angular-todo.JPG'
-import img10 from '../img/machine-learning.JPG'
-import img11 from '../img/selenium.JPG'
-import img12 from '../img/chatbot.JPG'
-import img13 from '../img/deeplearning.jfif'
+import img7 from '../img/react-native-tinder-clone.JPG'
+import img8 from '../img/react-native-signal-clone.jpeg'
+import img9 from '../img/angular-investenergy.JPG'
+import img10 from '../img/angular-todo.JPG'
+import img11 from '../img/machine-learning.JPG'
+import img12 from '../img/selenium.JPG'
+import img13 from '../img/chatbot.JPG'
+import img14 from '../img/deeplearning.jfif'
 
 
 
@@ -72,59 +73,68 @@ const porfolios = [
         id: 7,
         category: 'React-Native-Expo',
         image: img7,
+        link1:'https://github.com/rohangore1999/REACT-NATIVE-TINDER-CLONE',
+        link2: 'https://expo.dev/artifacts/eb202922-3855-4edf-9a66-011389576fd1',
+        text: 'Tinder-Clone-React-Native-Expo'
+    },
+
+    {
+        id: 8,
+        category: 'React-Native-Expo',
+        image: img8,
         link1:'https://github.com/rohangore1999/REACT-NATIVE-SIGNAL-CLONE',
         link2: 'https://expo.dev/artifacts/6c2843ad-a116-4e04-a062-752ef1c7cb5c',
         text: 'Signal-Clone-React-Native-Expo'
     },
 
     {
-        id: 8,
+        id: 9,
         category: 'Angular',
-        image: img8,
+        image: img9,
         link1:'https://github.com/rohangore1999/Solar-Web-Angular',
         link2:'https://investenergy.in/',
         text: 'Invest Energy'
     },
     {
-        id: 9,
+        id: 10,
         category: 'Angular',
-        image: img9,
+        image: img10,
         link1:'https://github.com/rohangore1999/Angular-todo',
         link2: false,
         text: 'Todo List'
     },
 
     {
-        id: 10,
+        id: 11,
         category: 'Machine Learning',
-        image: img10,
+        image: img11,
         link1:'https://github.com/rohangore1999/Machine-Learning',
         link2: false,
         text: 'ML - Projects'
     },
 
     {
-        id: 11,
+        id: 12,
         category: 'Web Scraping',
-        image: img11,
+        image: img12,
         link1:'https://github.com/rohangore1999/Selenium',
         link2: false,
         text: 'Selenium'
     },
 
     {
-        id: 12,
+        id: 13,
         category: 'Chatbot',
-        image: img12,
+        image: img13,
         link1:'https://github.com/rohangore1999/Selenium',
         link2: false,
         text: 'Rasa NLU'
     },
 
     {
-        id: 13,
+        id: 14,
         category: 'Deep Learning',
-        image: img13,
+        image: img14,
         link1:'https://github.com/rohangore1999/Selenium',
         link2: false,
         text: 'DL - Projects'
