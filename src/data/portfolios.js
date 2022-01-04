@@ -73,7 +73,7 @@ const porfolios = [
         id: 7,
         category: 'React-Native-Expo',
         image: img7,
-        link1:'https://github.com/rohangore1999/REACT-NATIVE-TINDER-CLONE',
+        link1:'https://github.com/rohangore1999/REACT-NATIVE-EXPO-TINDER-CLONE',
         link2: 'https://expo.dev/artifacts/eb202922-3855-4edf-9a66-011389576fd1',
         text: 'Tinder-Clone-React-Native-Expo'
     },
