@@ -19,7 +19,7 @@ function ServicesSection() {
                 <Title title={'Services'} span={'Services'} />
 
                 <div className="services">
-                    <ServiceCard image={webdev} title={'Web Development'} paragraph={'Technology: ANGULAR 12, REACT JS, NEXT JS'} />
+                    <ServiceCard image={webdev} title={'Web Development'} paragraph={'Technology: ANGULAR 12, REACT JS, NEXT JS, TAILWIND CSS'} />
 
                     <div className="mid-card">
                         <ServiceCard image={scrape} title={'Web Scraping'} paragraph={'Technology: PYTHON - BEAUTIFUL SOUP, SELENIUM, REQUESTS'} />
