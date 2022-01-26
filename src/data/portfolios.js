@@ -37,7 +37,7 @@ const porfolios = [
         image: img2,
         link1:'https://github.com/rohangore1999/REACT-NEXTJS-AMAZON-CLONE',
         link2:'https://react-nextjs-amazon-clone-3eeyj610w-rohangore1999.vercel.app/',
-        text: 'Amazon Clone - NextJS'
+        text: 'Amazon Clone - NextJS, Redux, Stripe'
     },
     {
         id: 3,
