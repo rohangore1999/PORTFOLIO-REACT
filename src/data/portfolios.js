@@ -27,7 +27,7 @@ const porfolios = [
         category: 'React-Clones',
         image: img1,
         link1:'https://github.com/rohangore1999/REACT-NEXTJS-AMAZON-CLONE',
-        link2:'https://react-nextjs-amazon-clone-22musrxd9-rohangore1999.vercel.app/',
+        link2:'https://react-nextjs-amazon-clone-3eeyj610w-rohangore1999.vercel.app/',
         text: 'Amazon Clone - NextJS'
     },
     {
