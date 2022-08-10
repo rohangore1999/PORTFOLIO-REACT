@@ -50,12 +50,12 @@ function PrimaryButton({ title, downloads, name, email, subject, message, setnam
     return (
         <>
             {downloads ? (
-                <PrimaryButtonStyled href="Rohan_Gore_2021.pdf" download>
+                <PrimaryButtonStyled href="Rohan_Gore_2022.pdf" download>
                     {title}
                 </PrimaryButtonStyled>
             ) :
                 (
-                    <PrimaryButtonStyled onClick={call_api} onClick={handleClick}>
+                    <PrimaryButtonStyled onClick={[call_api, handleClick]}>
                         {title}
                     </PrimaryButtonStyled>
                 )
