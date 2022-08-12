@@ -53,5 +53,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.5"
+  }
 }
