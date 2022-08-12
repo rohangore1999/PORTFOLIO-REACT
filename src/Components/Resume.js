@@ -23,7 +23,7 @@ function Resume() {
                 </div>
 
                 <div className="resume-content">
-                    <ResumeItem year={'JULY 2021 - Present'} title={'Cashfree Payments'} subTitle={'Frontend Engineer'} text={'Full Time'} />
+                    <ResumeItem year={'JULY 2022 - Present'} title={'Cashfree Payments'} subTitle={'Frontend Engineer'} text={'Full Time'} />
 
                     <ResumeItem year={'MARCH 2021 - JULY 2022'} title={'HCL Technologies'} subTitle={'Software Engineer'} text={'Full Time'} />
 
