@@ -31,7 +31,7 @@ function ImageSection() {
                         <p>: 19-01-1999</p>
                         <p>: Indian</p>
                         <p>: Navi Mumbai</p>
-                        <p>: Full time Employee in HCL Technologies</p>
+                        <p>: Cashfree Payments</p>
                     </div>
                 </div>
 
