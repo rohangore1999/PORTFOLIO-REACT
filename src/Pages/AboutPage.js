@@ -1,24 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-import ImageSection from '../Components/ImageSection'
-import ServicesSection from '../Components/ServicesSection'
-import Title from '../Components/Title'
-import {MainLayout} from '../styles/Layouts'
+import React from "react";
+import styled from "styled-components";
+import ImageSection from "../components/ImageSection";
+import ServicesSection from "../components/ServicesSection";
+import Title from "../components/Title";
+import { MainLayout } from "../styles/Layouts";
 
 function AboutPage() {
-    return (
-        <MainLayout >
-            <AboutStyled>
-                <Title title={'About Me'} span={'About Me'}/>
-                <ImageSection />
-                <ServicesSection />
-            </AboutStyled>
-        </MainLayout>
-    )
+  return (
+    <MainLayout>
+      <AboutStyled>
+        <Title title={"About Me"} span={"About Me"} />
+        <ImageSection />
+        <ServicesSection />
+      </AboutStyled>
+    </MainLayout>
+  );
 }
 
-export default AboutPage
+export default AboutPage;
 
-const AboutStyled = styled.section`
-    
-`
+const AboutStyled = styled.section``;
